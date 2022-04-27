@@ -21,6 +21,6 @@ Browsing http://localhost:5000/comments/1 to receive an HTML fragment with some 
 You can change the path (up to http://localhost:5000/comments/100) to receive different responses.
 
 ### TODOs
-  - [ ] Store constanst in a config file
+  - [ ] Store constants in a config file
   - [ ] Set responses content-type and charset
   - [ ] Evaluate implementing [Router](http://expressjs.com/es/api.html#router) for scalability
