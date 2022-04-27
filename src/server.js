@@ -1,16 +1,16 @@
+const cors = require('cors')
 const express = require('express')
+
 const app = express()
 const port = process.env.PORT || 5000;
 
 const { builder } = require('./modules/builder')
 
-//console.info('process.env\n', process.env)
-
 app.get('/', (req, res) => {
   res.sendStatus(204)
 })
 
-app.get('/comments/:id', async(req, res) => {
+app.get('/comments/:id', cors(), async(req, res) => {
   try {
     const { id } = req.params
     const html = await builder(id)
