@@ -1,0 +1,31 @@
+<style type="text/css">
+  .wrapper {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+  }
+  .wrapper .list {
+    list-style: none;
+    margin-left: 0;
+  }
+  .wrapper .list li h2 {
+    color: #c71585;
+  }
+  .wrapper .list li p:first-of-type + p {
+    color: #808080;
+  }
+</style>
+
+<div class="wrapper">
+  <ul class="list">
+    {{#each this}}
+      <li>
+        {{#with this}}
+          <h2>{{id}}. {{name}}</h2>
+          <p>Author: <a href="mailto:{{email}}">{{email}}</a></p>
+          <p>{{body}}</p>
+        {{/with}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
