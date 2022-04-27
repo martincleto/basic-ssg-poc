@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "A custom made html generator",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "express",
+    "handlebars",
+    "html",
+    "ssg"
+  ],
+  "author": "Santiago Martín-Cleto",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "nodemon index",
     "start": "node index",
